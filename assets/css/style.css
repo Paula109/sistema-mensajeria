@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+/*seccion-contactos*/
+
+.seccion-contactos {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 2px solid #e8ebe4;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.maria {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e8ebe4;
+}
+
+.perfil-maria {
+    display: flex;
+    padding: 15px;
+}
+
+.perfil-maria img {
+    border-radius: 50px;
+    border: 3px solid #e8ebe4;
+}
+
+.maria-activa {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.maria-activa h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.maria-activa p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+div>i {
+    padding-top: 35px;
+    padding-right: 10px;
+    color: #828485;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px solid #e8ebe4;
+}
+
+div>button {
+    padding: 15px;
+    padding-inline: 50px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background-color: #a491d2;
+}
+
+/*usuarios*/
+
+.usuario {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #e8ebe4;
+}
+
+.perfil-usuario {
+    display: flex;
+    padding: 15px;
+}
+
+.perfil-usuario img {
+    border-radius: 50px;
+    border: 3px solid #e8ebe4;
+}
+
+.datos-usuario {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.datos-usuario h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.datos-usuario p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+
+/*sección-principal*/
+
+.seccion-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #e8ebe4;
+}
+
+.seccion-principal div {
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.seccion-principal div h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 10px;
+    text-align: center;
+}
+.seccion-principal div p {
+    text-align: center;
+}
+
+@media(max-width:576px) {
+    .seccion-contactos{
+        width: 100vw;
+    }
+    .maria {justify-content: space-evenly;
+
+    }
+
+    .usuario{
+        justify-content: space-around;
+    }
+    .perfil-usuario {
+        gap: 50px;
+    }
+
+    .seccion-principal {
+        display: none;
+    }
+}
+
+
+@media(max-width:768px){
+    .seccion-principal {
+        width: 60vw;
+    }
+
+    .seccion-principal div {
+        width: 400px;
+    }
+}
+
+@media(max-width:992px){
+    .seccion-principal {
+        width: 80vw;
+    }
+
+    .seccion-principal div {
+        width: 300px;
+    }
+}
+
