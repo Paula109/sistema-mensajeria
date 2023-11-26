@@ -67,13 +67,22 @@ div>i {
     border-bottom: 2px solid #e8ebe4;
 }
 
-div>button {
+.boton button {
     padding: 15px;
     padding-inline: 50px;
     border: none;
     color: white;
     font-size: 1rem;
     background-color: #a491d2;
+}
+
+.boton button:hover {
+    cursor: pointer;
+    background-color: #cdc3e6;
+}
+
+.boton button:focus {
+    background-color: #bec1bb;
 }
 
 /*usuarios*/
